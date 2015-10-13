@@ -14,6 +14,9 @@
 		4712756A1BCCABD0002D1207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471275681BCCABD0002D1207 /* LaunchScreen.storyboard */; };
 		471275751BCCABD1002D1207 /* Dropbox2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471275741BCCABD1002D1207 /* Dropbox2Tests.swift */; };
 		471275801BCCABD1002D1207 /* Dropbox2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712757F1BCCABD1002D1207 /* Dropbox2UITests.swift */; };
+		4712758E1BCCB315002D1207 /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712758D1BCCB315002D1207 /* CreateAccountRootViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		47EF0CD91BCCBDE9005B0349 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EF0CD81BCCBDE9005B0349 /* settingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		47EF0CDB1BCCC5B5005B0349 /* welcom1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EF0CDA1BCCC5B5005B0349 /* welcom1ViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		4712757B1BCCABD1002D1207 /* Dropbox2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dropbox2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4712757F1BCCABD1002D1207 /* Dropbox2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropbox2UITests.swift; sourceTree = "<group>"; };
 		471275811BCCABD1002D1207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4712758D1BCCB315002D1207 /* CreateAccountRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountRootViewController.swift; sourceTree = "<group>"; };
+		47EF0CD81BCCBDE9005B0349 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		47EF0CDA1BCCC5B5005B0349 /* welcom1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = welcom1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				4712755F1BCCABD0002D1207 /* AppDelegate.swift */,
 				471275611BCCABD0002D1207 /* ViewController.swift */,
 				471275631BCCABD0002D1207 /* Main.storyboard */,
+				47EF0CDA1BCCC5B5005B0349 /* welcom1ViewController.swift */,
+				47EF0CD81BCCBDE9005B0349 /* settingsViewController.swift */,
+				4712758D1BCCB315002D1207 /* CreateAccountRootViewController.swift */,
 				471275661BCCABD0002D1207 /* Assets.xcassets */,
 				471275681BCCABD0002D1207 /* LaunchScreen.storyboard */,
 				4712756B1BCCABD0002D1207 /* Info.plist */,
@@ -258,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4712758E1BCCB315002D1207 /* CreateAccountRootViewController.swift in Sources */,
 				471275621BCCABD0002D1207 /* ViewController.swift in Sources */,
+				47EF0CDB1BCCC5B5005B0349 /* welcom1ViewController.swift in Sources */,
 				471275601BCCABD0002D1207 /* AppDelegate.swift in Sources */,
+				47EF0CD91BCCBDE9005B0349 /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +496,7 @@
 				471275861BCCABD1002D1207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		471275871BCCABD1002D1207 /* Build configuration list for PBXNativeTarget "Dropbox2Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				471275891BCCABD1002D1207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4712758A1BCCABD1002D1207 /* Build configuration list for PBXNativeTarget "Dropbox2UITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				4712758C1BCCABD1002D1207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
