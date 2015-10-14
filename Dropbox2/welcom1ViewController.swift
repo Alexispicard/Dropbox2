@@ -10,7 +10,7 @@ import UIKit
 
 class welcom1ViewController: UIViewController {
 
-    @IBOutlet var welcom1Swipe: UISwipeGestureRecognizer!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +33,6 @@ class welcom1ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

@@ -26,9 +26,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="welcom1Swipe" destination="zIo-hP-zhW" id="ogz-2x-6Ca"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="zIo-hP-zhW">
@@ -310,35 +307,6 @@
             </objects>
             <point key="canvasLocation" x="5422" y="934"/>
         </scene>
-        <!--Settings View Controller-->
-        <scene sceneID="Qj3-hy-Czh">
-            <objects>
-                <viewController id="Sv6-wE-g4i" customClass="settingsViewController" customModule="Dropbox2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gxe-pY-2QZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Rhl-cB-OAq" customClass="settingsScrollView">
-                                <rect key="frame" x="0.0" y="64" width="320" height="452"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="MEO-cz-mS4" userLabel="SettingsImage">
-                                <rect key="frame" x="0.0" y="64" width="320" height="772"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="oKb-Dc-7fo"/>
-                    <connections>
-                        <outlet property="settings" destination="MEO-cz-mS4" id="lEL-z3-sBu"/>
-                        <outlet property="settingsScrollView" destination="Rhl-cB-OAq" id="s2d-pE-RIU"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="djN-w4-yuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5424" y="1569"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="CkW-6l-9NZ">
             <objects>
@@ -468,7 +436,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Sv6-wE-g4i" kind="relationship" relationship="rootViewController" id="Zhj-vx-Lfx"/>
+                        <segue destination="WKq-Ib-2GC" kind="relationship" relationship="rootViewController" id="1sI-hn-iOX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YH3-hk-V9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -690,29 +658,38 @@
             <objects>
                 <viewController id="qDv-yo-8iJ" customClass="settingsViewController" customModule="Dropbox2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KY3-70-jXR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="q3Q-hY-GgE" customClass="settingsScrollView">
                                 <rect key="frame" x="0.0" y="64" width="320" height="452"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="BrF-FO-6A0" userLabel="SettingsImage">
                                 <rect key="frame" x="0.0" y="64" width="320" height="772"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DNW-0H-kWN">
+                                <rect key="frame" x="0.0" y="754" width="320" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="fXD-J0-ZwV" kind="modal" id="97d-xP-jKe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="mRB-67-Owm"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="900"/>
                     <connections>
-                        <outlet property="settings" destination="BrF-FO-6A0" id="18f-Al-Jtf"/>
+                        <outlet property="settingsImage" destination="BrF-FO-6A0" id="IbU-Zj-4m7"/>
                         <outlet property="settingsScrollView" destination="q3Q-hY-GgE" id="vXY-c0-vuZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4D4-4Z-1ZS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5448" y="4449"/>
+            <point key="canvasLocation" x="5424" y="4661"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vgL-OG-GWf">
@@ -859,6 +836,44 @@
             </objects>
             <point key="canvasLocation" x="4916" y="4449"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="8Se-Gd-v7F">
+            <objects>
+                <viewController id="WKq-Ib-2GC" customClass="settingsViewController" customModule="Dropbox2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vv8-37-Ruw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Udf-1r-NDB" customClass="settingsScrollView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="452"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="1ZK-tq-boB" userLabel="SettingsImage">
+                                <rect key="frame" x="0.0" y="64" width="320" height="772"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hIt-Nf-IDK">
+                                <rect key="frame" x="0.0" y="754" width="320" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="grN-bq-D0k" kind="modal" id="wnw-SQ-Ydr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xD1-hD-X41"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="900"/>
+                    <connections>
+                        <outlet property="settingsImage" destination="1ZK-tq-boB" id="U61-Uw-uNM"/>
+                        <outlet property="settingsScrollView" destination="Udf-1r-NDB" id="9B0-N7-z7I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zab-6x-dus" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5432" y="1757"/>
+        </scene>
     </scenes>
     <resources>
         <image name="create1" width="320" height="568"/>
@@ -880,6 +895,8 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="wnw-SQ-Ydr"/>
+        <segue reference="97d-xP-jKe"/>
         <segue reference="viq-25-soO"/>
     </inferredMetricsTieBreakers>
 </document>
